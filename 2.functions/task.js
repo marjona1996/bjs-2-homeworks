@@ -33,6 +33,7 @@ function differenceMaxMinWorker(...arr) {
     if (arr[i] > max) max = arr[i];
     if (arr[i] < min) min = arr[i];
   }
+
   return max - min;
 }
 console.log(differenceMaxMinWorker());
@@ -70,7 +71,7 @@ console.log(averageEvenElementsWorker(1, 2, 3, 4, 5, 6, 7, 8, 9));
 console.log(averageEvenElementsWorker(15, 97, 85, 64, 67, 10, 69, 40, 15, 35));
 
 function makeWork(arrOfArr, func) {
-  let maxWorkerResult = -infinity;
+  let maxWorkerResult = -Infinity;
   for (let i = 0; i < arrOfArr.length; i++) {
     const result = func(...arrOfArr[i]);
     if (result > maxWorkerResult) {
